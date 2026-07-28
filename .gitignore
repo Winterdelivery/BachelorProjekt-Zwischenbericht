@@ -1,0 +1,17 @@
+*.aux
+*.log
+*.out
+*.toc
+*.synctex.gz
+*.fdb_latexmk
+*.fls
+*.bbl
+*.blg
+*.lof
+*.lot
+*.gz
+*.xdv
+*.nav
+*.snm
+*.vrb
+.DS_Store
