@@ -1,0 +1,74 @@
+\chapter{OCMExplore}
+
+\section{Problem}
+Das Oldenburger Computer-Museum (OCM) bietet seinen Besuchern die Möglichkeit, die Entwicklung der Computertechnik anhand zahlreicher historischer Systeme nachzuvollziehen. Viele der ausgestellten Computer können dabei direkt bedient werden und vermitteln so einen praxisnahen Eindruck ihrer Funktionsweise. Einige besonders seltene oder empfindliche Exponate befinden sich jedoch ausschließlich in Vitrinen und können nicht interaktiv erkundet werden. Zu diesen Exponaten gehört auch der KIM-1, ein Einplatinencomputer aus dem Jahr 1976. Obwohl er als wichtiger Meilenstein der Mikrocomputerentwicklung gilt, können Besucher ihn lediglich betrachten. Informationen über die einzelnen Hardwarekomponenten und deren historische Bedeutung lassen sich nur eingeschränkt vermitteln, wodurch das Potenzial des Exponats nicht vollständig ausgeschöpft wird.
+
+\section{Idee}
+Um den KIM-1 auch ohne direkten Zugriff interaktiv erlebbar zu machen, entstand die Idee einer Augmented-Reality-Anwendung. Statt das Originalexponat zu ersetzen, soll dieses durch digitale Inhalte ergänzt werden. Besucher richten dabei ihr mobiles Endgerät auf den KIM-1 und erhalten zusätzliche Informationen direkt am Exponat.\\Mithilfe interaktiver Infoboxen können einzelne Hardwarekomponenten ausgewählt werden, um weiterführende Informationen zu ihrer Funktion und historischen Einordnung zu erhalten. Ergänzend sollen beispielhafte Programme den grundsätzlichen Ablauf einer Programmausführung auf dem KIM-1 veranschaulichen.
+
+\section{Projekt}
+Im Rahmen dieses Projekts wurde eine mobile Augmented-Reality-Anwendung entwickelt, die den ausgestellten KIM-1 digital erweitert. Nach dem Erfassen des Exponats werden virtuelle Inhalte an den passenden Positionen über dem realen Computer eingeblendet. Hierfür dient ein dreidimensionales Modell des KIM-1 als räumliche Referenz, um Infoboxen und Animationen präzise auf den einzelnen Hardwarekomponenten zu positionieren.\\Die Anwendung umfasst interaktive Infoboxen mit Informationen zu den wichtigsten Bauteilen des KIM-1 sowie zwei animierte Beispielprogramme. Ein Zählerprogramm und die Berechnung der Fibonacci-Folge werden Schritt für Schritt dargestellt. Dadurch erhalten Besucher einen anschaulichen Einblick in den Aufbau des Computers und die grundlegende Arbeitsweise historischer Mikrocomputersysteme.
+
+\section{Planung}
+Nach der Recherche wurden die Anforderungen an die Anwendung gemeinsam festgelegt und die Aufgaben innerhalb der Gruppe verteilt. Dabei orientierte sich die Aufgabenteilung an den Interessen und Vorkenntnissen der einzelnen Gruppenmitglieder. So konnten verschiedene Bereiche, wie die Erstellung des 3D-Modells, die Entwicklung der AR-Anwendung, die Umsetzung der Infoboxen sowie die Programmanimationen, parallel bearbeitet werden. Während des gesamten Projekts fanden regelmäßige Teamabstimmungen statt. Dadurch konnten Fortschritte besprochen, Probleme frühzeitig erkannt und die einzelnen Arbeitsschritte aufeinander abgestimmt werden. Für die gemeinsame Entwicklung und Versionsverwaltung wurde GitLab verwendet, wodurch Änderungen zentral verwaltet und unkompliziert zusammengeführt werden konnten.
+
+\section{Aufgabenteilung}
+\begin{tabularx}{\textwidth}{|l | X | l|}
+    \hline
+    \textbf{Name} & \textbf{Aufgaben} & \textbf{Spezialisierung}\\
+    \hline
+    Luca &
+        \begin{tabular}{@{}l@{}}
+            Research\\
+            Gestalung der Programme\\
+            Arbeit am Emulator
+        \end{tabular} & 
+        KIM-1 Experte\\
+    \hline
+    Sebastian &
+        \begin{tabular}{@{}l@{}}
+            Modellieren vom KIM-1 \\
+            Grundlagen für Animationen am KIM-1\\
+            Einrichten vom AR \\
+        \end{tabular} & 
+        \begin{tabular}{@{}l@{}}
+            3D Artist\\
+            AR
+        \end{tabular} \\
+    \hline
+    Louisa &
+        \begin{tabular}{@{}l@{}}
+            Projektmanagement\\
+            Einrichten Unity\\
+            Technische Implementation Unity\\
+            Einrichtung vom AR\\
+            Animieren von Programmen
+        \end{tabular} & 
+        \begin{tabular}{@{}l@{}}
+            Unity \\
+            AR
+        \end{tabular} \\
+    \hline
+    Fabian &
+        \begin{tabular}{@{}l@{}}
+            Research \\
+            Formulierung von Texten\\
+            Implementierung von Infoboxen
+        \end{tabular} &
+        KIM-1 Experte\\
+    \hline
+    Lawend &
+        \begin{tabular}{@{}l@{}}
+            Research\\
+            Animieren von Programmen\\
+            Prototypisieren in Unity\\
+        \end{tabular} &
+        Unity\\
+    \hline
+\end{tabularx}
+
+\section{Herausforderungen}
+Die größte Herausforderung im Projekt bestand in der ursprünglich geplanten Umsetzung als webbasierte Augmented-Reality-Anwendung. Ziel war es zunächst, dass Besucher die Anwendung ohne Installation über einen QR-Code direkt im Browser nutzen können. Im Verlauf der Entwicklung stellte sich jedoch heraus, dass diese Umsetzung mit den verwendeten Technologien nicht realisierbar war. Aus diesem Grund musste das Konzept angepasst und die Anwendung als native AR-App entwickelt werden. Dieser Wechsel erforderte zusätzliche Anpassungen in der Planung und Umsetzung, ermöglichte letztendlich jedoch eine stabile und funktionierende Anwendung. 
+
+\section{Fazit}
+Insgesamt konnte das Projekt erfolgreich abgeschlossen werden. Die Zusammenarbeit im Team verlief gut und durch die Aufteilung der Aufgaben konnten die einzelnen Projektbestandteile parallel entwickelt und anschließend zu einer gemeinsamen Anwendung zusammengeführt werden. Besonders positiv war der hohe Praxisbezug des Projekts. Anstatt ausschließlich an einer theoretischen Aufgabenstellung zu arbeiten, entstand eine Anwendung für einen realen Einsatz im Oldenburger Computer-Museum. Dadurch war jederzeit ein konkretes Ziel vorhanden, was die Arbeit zusätzlich motivierend machte. Gleichzeitig bot das Projekt genügend Freiraum, eigene Ideen einzubringen und verschiedene Lösungsansätze auszuprobieren. Schlussendlich lässt sich sagen, dass es ein erfolgreiches Projekt für alle Beteiligten war und es mit Zufriedenheit abgeschlossen wurde.
