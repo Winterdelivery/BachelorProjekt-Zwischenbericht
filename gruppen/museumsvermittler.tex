@@ -1,0 +1,89 @@
+
+\chapter{Museumsvermittler}
+
+\section{Einführung}
+
+Im Computermuseum Oldenburg stehen viele Computer, deren Bedienung für Besucherinnen und Besucher nicht immer sofort nachvollziehbar ist. Einzelne Arbeitsschritte lassen sich am Exponat oft nur eingeschränkt erklären. Daher haben wir für das Museum eine 3D-Roboterfigur entwickelt, die solche Abläufe anschaulicher und interaktiver vermitteln soll. Die Figur wird über das Smartphone aufgerufen und soll mithilfe von Web AR direkt am jeweiligen Exponat dargestellt werden.
+\section{Konzept}
+
+Die Idee war es, eine selbstgestaltete Figur als digitalen Museumsführer einzusetzen. Besucherinnen und Besucher scannen einen QR-Code am jeweiligen Exponat und sehen die Figur anschließend über die Kamera ihres Smartphones.
+
+Die Figur sollte grundsätzlich an verschiedene Exponate angepasst werden können. Das 3D-Modell sollte dabei gleich bleiben, während Texte, Erklärungen und Animationen für das jeweilige Gerät ausgetauscht werden. Über Schaltflächen können einzelne Erklärungstexte eingeblendet und nacheinander aufgerufen werden.
+
+\section{Projekt}
+
+Die Roboterfigur wurde mit Blender erstellt. Dabei konnten wir auf Kenntnisse aus dem vorherigen Semester zurückgreifen und diese während des Projekts weiter vertiefen. Das Modell wurde aus mehreren Grundformen aufgebaut, die miteinander kombiniert wurden. Danach wurden Materialien und Texturen ergänzt.
+
+\begin{figure}[H]
+    \centering
+
+    \begin{subfigure}[b]{0.48\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{roboter_modell.png}
+        \caption{Die Roboterfigur während der Modellierung.}
+        \label{fig:roboter-modell}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[b]{0.48\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{roboter_material.png}
+        \caption{Die Roboterfigur mit Materialien und Texturen.}
+        \label{fig:roboter-material}
+    \end{subfigure}
+
+    \caption{Entwicklung der Roboterfigur in Blender.}
+    \label{fig:blender-entwicklung}
+\end{figure}
+
+Abbildung~\ref{fig:blender-entwicklung} zeigt verschiedene Entwicklungsstände der Figur. Nach der Modellierung wurde sie für die Darstellung im Browser exportiert und in die Web-AR-Anwendung eingebunden.
+
+Der Zugriff erfolgt über einen QR-Code, der mit einem Smartphone gescannt wird. Danach öffnet sich eine Webseite, die auf die Kamera des Geräts zugreift. Sobald der Marker erkannt wird, erscheint die Roboterfigur auf dem Bildschirm.
+
+Für den Prototyp wurden die Inhalte auf den Atari 1040ST angepasst. Die Figur erklärt schrittweise, wie eine Diskette eingelegt und zum Abspielen von Musik verwendet wird. Die Texte werden unterhalb der Figur eingeblendet und können nacheinander durchgeklickt werden.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.48\textwidth]{web-ar-prototyp.jpg}
+    \caption{Darstellung der Roboterfigur in der Web-AR-Anwendung}
+    \label{fig:web-ar-prototyp}
+\end{figure}
+
+Abbildung~\ref{fig:web-ar-prototyp} zeigt den Prototyp auf einem Smartphone. Die Roboterfigur wird über dem erkannten Marker dargestellt. Unterhalb der Figur befindet sich der Erklärungstext mit den Bedienelementen.
+
+\section{Planung}
+
+Die grundlegende Struktur wurde so geplant, dass später auch weitere Exponate eingebunden werden können. Das Modell der Roboterfigur soll dabei erhalten bleiben. Je nach Exponat sollen lediglich die Texte, Abläufe und Animationen ausgetauscht werden.
+
+\section{Aufgabenverteilung}
+
+\begin{tabularx}{\textwidth}{|l|X|}
+    \hline
+    \textbf{Name} & \textbf{Aufgaben} \\
+    \hline
+    Polina &
+    Skizzen, erste Version der Figur in Blender (nicht verwendet), Materialien, Shape-Key-Animationen und Erklärungstexte \\
+    \hline
+    Nguyen &
+    Skizzen, zweite und finale Version der Figur in Blender, Export der Dateien, AR-Implementierung sowie Sounds und Musik \\
+    \hline
+\end{tabularx}
+
+\section{Herausforderungen}
+
+Während des Projekts wurde vergleichsweise viel Zeit in die Modellierung und Gestaltung der Figur investiert. Dadurch blieb weniger Zeit für Animationen und weitere interaktive Funktionen. Rückblickend wäre ein einfacheres Modell ausreichend gewesen. Die dadurch eingesparte Zeit hätte stärker in die Funktionalität der Anwendung investiert werden können.
+
+Eine weitere Einschränkung besteht darin, dass das Smartphone dauerhaft auf den QR-Code beziehungsweise den Marker gerichtet werden muss. Sobald der Marker nicht mehr von der Kamera erkannt wird, verschwindet die Figur oder verliert ihre Position. Dadurch können sich die Nutzerinnen und Nutzer während der Anwendung nicht frei mit dem Smartphone bewegen.
+
+Außerdem wurde deutlich, dass Augmented Reality vor allem dann einen Mehrwert bietet, wenn die Figur einen direkten Bezug zum realen Exponat herstellt. Dafür wären mehr Zeigeanimationen sinnvoll gewesen. Die Figur könnte beispielsweise auf das Diskettenlaufwerk, bestimmte Tasten oder andere Bereiche des Computers zeigen.
+
+Für zukünftige Projekte sollte deshalb früher eine einfache Version der Figur fertiggestellt und direkt in der AR-Anwendung getestet werden. Anschließend könnten schrittweise Animationen, Interaktionen und weitere Funktionen ergänzt werden.
+
+\section{Ausblick}
+
+Der Prototyp kann in mehreren Bereichen weiterentwickelt werden. Besonders interessant wären zusätzliche Animationen, mit denen die Figur auf konkrete Bereiche eines Exponats zeigt. Langfristig könnte dieselbe Roboterfigur für mehrere Exponate genutzt werden. Abhängig vom gescannten QR-Code könnte man passende Texte, Animationen und Informationen anzeigen lassen.
+
+\section{Fazit}
+
+Das Projekt hat gezeigt, wie sich ein selbst erstelltes 3D-Modell in eine Museumsumgebung integrieren lässt. Dabei konnten die vorhandenen Kenntnisse in Blender erweitert und praktische Erfahrungen mit interaktiven AR-Inhalten gesammelt werden.
+
+Entscheidend für den Nutzen der Anwendung ist nicht nur die Gestaltung der Figur, sondern vor allem ihre Verbindung zum realen Exponat. Der entstandene Prototyp bildet dafür eine Grundlage. Für eine Weiterentwicklung sollten besonders die Animationen, die Interaktion mit dem Exponat und eine stabilere Platzierung der Figur verbessert werden.
